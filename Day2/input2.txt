@@ -1,0 +1,3 @@
+A Y # Draw
+B X # Lose
+C Z # Win
