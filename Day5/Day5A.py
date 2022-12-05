@@ -29,5 +29,3 @@ for command in commands:
 
 for char in cargo2:
     print(char[-1:][0], end='')
-
-
