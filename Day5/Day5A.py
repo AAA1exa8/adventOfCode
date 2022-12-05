@@ -1,4 +1,5 @@
 commands = open('./input.txt', 'r')
+
 cargo = [['Z', 'N'], ['M', 'C', 'D'],['P']]
 cargo2 = [['P', 'F', 'M', 'Q', 'W', 'G', 'R', 'T'], 
          ['H', 'F', 'R'], 
@@ -25,9 +26,7 @@ for command in commands:
     for i in range(howMuch):
         cargo2[toWhere - 1].append(cargo2[fromWhere - 1][position - i])
         cargo2[fromWhere - 1].pop()
-    print(cargo2)
-        
-print(cargo2)
+
 for char in cargo2:
     print(char[-1:][0], end='')
 

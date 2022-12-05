@@ -26,7 +26,6 @@ for command in commands:
     for i in range(howMuch):
         cargo2[toWhere - 1].append(cargo2[fromWhere - 1][-(howMuch - i)])
         cargo2[fromWhere - 1].pop(-(howMuch - i))
-        
-print(cargo2)
+
 for char in cargo2:
     print(char[-1:][0], end='')
