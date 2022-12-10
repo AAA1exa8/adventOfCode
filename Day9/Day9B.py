@@ -7,15 +7,15 @@ DV = {'L': 0, 'U': -1, 'R': 0, 'D': 1}
 DH = {'L': -1, 'U': 0, 'R': 1, 'D': 0}
 
 def adjustTail(H,T):
-    dr = (H[0]-T[0])
-    dc = (H[1]-T[1])
-    if abs(dr)<=1 and abs(dc)<=1:
+    diffH = (H[0]-T[0])
+    diffV = (H[1]-T[1])
+    if abs(diffH)<=1 and abs(diffV)<=1:
         pass
-    elif abs(dr)>=2 and abs(dc)>=2:
+    elif abs(diffH)>=2 and abs(diffV)>=2:
         T = (H[0]-1 if T[0]<H[0] else H[0]+1, H[1]-1 if T[1]<H[1] else H[1]+1)
-    elif abs(dr)>=2:
+    elif abs(diffH)>=2:
         T = (H[0]-1 if T[0]<H[0] else H[0]+1, H[1])
-    elif abs(dc)>=2:
+    elif abs(diffV)>=2:
         T = (H[0], H[1]-1 if T[1]<H[1] else H[1]+1)
     return T
 
