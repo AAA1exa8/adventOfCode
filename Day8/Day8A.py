@@ -15,7 +15,6 @@ for i in range(len(forrest[0])):
     for n in range(len(forrest)):
         turnedForrest[i].append(forrest[n][i])
 
-iterator = 0
 def counting(localForrest: list):
     global count
     for row in range(len(localForrest)):
