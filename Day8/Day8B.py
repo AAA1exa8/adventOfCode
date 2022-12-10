@@ -29,7 +29,6 @@ def scenic(row, column, tree):
     south = calcScenic(sLine, tree)
     west = calcScenic(wLine, tree)
     east = calcScenic(eLine, tree)
-    print(north, south, west, east)
     if (west * south * north * east) > highestScene:
         highestScene = (west * south * north * east)
 
